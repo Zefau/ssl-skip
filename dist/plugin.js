@@ -1,27 +1,13 @@
-var capacitorCertificatesPlugin = (function (exports, core) {
-    'use strict';
+var capacitorSslSkip = (function (exports, core) {
+	'use strict';
 
-    const CertificatesPlugin = core.registerPlugin('CertificatesPlugin', {
-        web: () => Promise.resolve().then(function () { return web; }).then(m => new m.CertificatesPluginWeb()),
-    });
+	const SslSkip = core.registerPlugin('SslSkip', {});
 
-    class CertificatesPluginWeb extends core.WebPlugin {
-        async echo(options) {
-            console.log('ECHO', options);
-            return options;
-        }
-    }
+	exports.SslSkip = SslSkip;
 
-    var web = /*#__PURE__*/Object.freeze({
-        __proto__: null,
-        CertificatesPluginWeb: CertificatesPluginWeb
-    });
+	Object.defineProperty(exports, '__esModule', { value: true });
 
-    exports.CertificatesPlugin = CertificatesPlugin;
-
-    Object.defineProperty(exports, '__esModule', { value: true });
-
-    return exports;
+	return exports;
 
 })({}, capacitorExports);
 //# sourceMappingURL=plugin.js.map

@@ -1,25 +1,45 @@
 {
   "api": {
-    "name": "CertificatesPluginPlugin",
-    "slug": "certificatespluginplugin",
+    "name": "SslSkipPlugin",
+    "slug": "sslskipplugin",
     "docs": "",
     "tags": [],
     "methods": [
       {
-        "name": "echo",
-        "signature": "(options: { value: string; }) => Promise<{ value: string; }>",
-        "parameters": [
+        "name": "isAllowUntrusted",
+        "signature": "() => Promise<boolean>",
+        "parameters": [],
+        "returns": "Promise<boolean>",
+        "tags": [
           {
-            "name": "options",
-            "docs": "",
-            "type": "{ value: string; }"
+            "name": "since",
+            "text": "1.0.0"
           }
         ],
-        "returns": "Promise<{ value: string; }>",
-        "tags": [],
-        "docs": "",
+        "docs": "Get whether untrusted certificates are allowed.",
         "complexTypes": [],
-        "slug": "echo"
+        "slug": "isallowuntrusted"
+      },
+      {
+        "name": "setAllowUntrusted",
+        "signature": "(allowUntrusted: boolean) => void",
+        "parameters": [
+          {
+            "name": "allowUntrusted",
+            "docs": "",
+            "type": "boolean"
+          }
+        ],
+        "returns": "void",
+        "tags": [
+          {
+            "name": "since",
+            "text": "1.0.0"
+          }
+        ],
+        "docs": "Set to allow untrusted certificates.",
+        "complexTypes": [],
+        "slug": "setallowuntrusted"
       }
     ],
     "properties": []

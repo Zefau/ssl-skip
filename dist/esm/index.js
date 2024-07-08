@@ -1,7 +1,5 @@
 import { registerPlugin } from '@capacitor/core';
-const CertificatesPlugin = registerPlugin('CertificatesPlugin', {
-    web: () => import('./web').then(m => new m.CertificatesPluginWeb()),
-});
+const SslSkip = registerPlugin('SslSkip', {});
 export * from './definitions';
-export { CertificatesPlugin };
+export { SslSkip };
 //# sourceMappingURL=index.js.map

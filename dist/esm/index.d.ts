@@ -1,4 +1,4 @@
-import type { CertificatesPluginPlugin } from './definitions';
-declare const CertificatesPlugin: CertificatesPluginPlugin;
+import type { SslSkipPlugin } from './definitions';
+declare const SslSkip: SslSkipPlugin;
 export * from './definitions';
-export { CertificatesPlugin };
+export { SslSkip };
