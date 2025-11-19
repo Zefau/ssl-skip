@@ -10,5 +10,7 @@ export interface SslSkipPlugin {
      *
      * @since 1.0.0
      */
-    setAllowUntrusted(allowUntrusted: boolean): void;
+    setAllowUntrusted(options: {
+        allowUntrusted: boolean;
+    }): void;
 }

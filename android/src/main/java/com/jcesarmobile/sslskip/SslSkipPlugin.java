@@ -60,7 +60,8 @@ public class SslSkipPlugin extends Plugin {
 	 */
     @PluginMethod
     public void setAllowUntrusted(PluginCall call) {
-			this.allowUntrusted = Boolean.TRUE.equals(call.getBoolean("allowUntrusted", false));
+        this.allowUntrusted = Boolean.TRUE.equals(call.getBoolean("allowUntrusted", false));
+        this.isAllowUntrusted(call);
 	}
 
 	/**

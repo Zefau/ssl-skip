@@ -22,12 +22,12 @@
       },
       {
         "name": "setAllowUntrusted",
-        "signature": "(allowUntrusted: boolean) => void",
+        "signature": "(options: { allowUntrusted: boolean; }) => void",
         "parameters": [
           {
-            "name": "allowUntrusted",
+            "name": "options",
             "docs": "",
-            "type": "boolean"
+            "type": "{ allowUntrusted: boolean; }"
           }
         ],
         "returns": "void",
